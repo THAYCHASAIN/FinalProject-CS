@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
     database: 'project_final'
 });
 
-con.connect(function(err) {
+connection.connect(function(err) {
     if (err) throw err;
     
     const Hapi = require('hapi');
