@@ -3,14 +3,14 @@ const app = require('express')();
 
 const mysql = require('mysql');
 
-var connection = mysql.createConnection({
+var con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'project_final'
 });
 
-connection.connect(function(err) {
+con.connect(function(err) {
     if (err) throw err;
     
     const Hapi = require('hapi');
