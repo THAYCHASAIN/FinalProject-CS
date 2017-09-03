@@ -1,0 +1,19 @@
+{
+  "name": "thay",
+  "version": "1.0.0",
+  "description": "ALL FILE PROJRCT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THAYCHASAIN/FinalProject-CS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THAYCHASAIN/FinalProject-CS/issues"
+  },
+  "homepage": "https://github.com/THAYCHASAIN/FinalProject-CS#readme"
+}

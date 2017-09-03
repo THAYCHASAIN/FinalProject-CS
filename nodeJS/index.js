@@ -1,5 +1,6 @@
 'use strict';
 const app = require('express')();
+/*
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
@@ -18,7 +19,7 @@ app.use(bodyParser.urlencoded({
 connection.connect();
 
 module.exports = connection
-
+*/
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
