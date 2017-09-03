@@ -1,25 +1,19 @@
 'use strict';
 const app = require('express')();
-/*
-const bodyParser = require('body-parser');
+
 const mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host: '192.168.137.1',
+    host: '127.0.0.1',
     user: 'root',
     password: '',
     database: 'project_final'
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
 connection.connect();
 
 module.exports = connection
-*/
+
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
