@@ -36,7 +36,7 @@ con.connect(function(err) {
             var  sensor_Weight = encodeURIComponent(request.params.sen1);
             var  sensor_Distance = encodeURIComponent(request.params.sen2);
             var time_stamp = encodeURIComponent(request.params.time);
-            con.query('INSERT INTO tb_log (SEN_W,SEN_R,status,time) VALUES ('+sensor_Weight+','+sensor_Distance+',1,'+time_stamp+')',function(err,result,field){
+            con.query('INSERT INTO tb_log (SEN_W,SEN_R,status,time) VALUES ("'+sensor_Weight+'","'+sensor_Distance+'","1","'+time_stamp+'")',function(err,result,field){
                 if(err) throw err;
                 console.log('OKAY');
             })
