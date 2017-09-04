@@ -45,21 +45,17 @@ con.connect(function(err) {
                 status += 25; 
                 
             }
-            if((sensor_Distance - Distance_def) == 20) {
-                status = 0;
-            }
+         
             if(sensor_Distance < -20){
                 status += 25;
-                
             }
       
 
             console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ sensor_Weight );
-            console.log('time : ' + encodeURIComponent(request.params.time));
-            console.log('status : '+ status);
+            console.log('Time : '+encodeURIComponent(request.params.time));
+            console.log('Status : '+ status);
             reply('OKAY');
 
-           
             /*
             con.query('INSERT INTO tb_log (SEN_W,SEN_R,status,time) VALUES ("'+sensor_Weight+'","'+sensor_Distance+'","1","'+time_stamp+'")',function(err,result,field){
                 if(err) throw err;
