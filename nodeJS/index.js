@@ -1,6 +1,6 @@
 'use strict';
 const app = require('express')();
-
+console.log('testtttt');
 const mysql = require('mysql');
 var Weight_def = 0;
 var con = mysql.createConnection({
