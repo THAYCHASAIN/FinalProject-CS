@@ -42,7 +42,7 @@ con.connect(function(err) {
             var time_stamp = encodeURIComponent(request.params.time);
             
             if(sensor_Weight < 140){
-                //status += 25; 
+                status += 25; 
                 
             }
             if((sensor_Distance - Distance_def) == 20) {
