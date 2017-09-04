@@ -46,13 +46,9 @@ con.connect(function(err) {
             if(sensor_Distance < 130){
                 status += 25; 
             }
-            if(sensor_Weight >= -10 || sensor_Weight <= 10){
+            if(sensor_Weight >= -10 && sensor_Weight <= 10){
                 Weight_def = 0;
             }
-            console.log('old Weight_def : '+(Weight_def));
-            console.log('old sensor_Weight : '+(sensor_Weight));
-
-
             if((Weight_def - sensor_Weight)  > 50){
                 status += 25;
                 Weight_def = sensor_Weight; //set 
