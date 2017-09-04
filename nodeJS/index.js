@@ -55,8 +55,9 @@ con.connect(function(err) {
          
       
 
-            console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ Weight_def );
-            console.log('Time : '+encodeURIComponent(request.params.time));
+            console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ sensor_Weight );
+            console.log('Weight def : '+Weight_def);
+            console.log('Time : '+time_stamp);
             console.log('Status : '+ status);
             reply('OKAY');
 
