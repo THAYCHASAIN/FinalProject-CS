@@ -48,9 +48,9 @@ con.connect(function(err) {
             if((sensor_Distance - Distance_def) == 20) {
                 status = 0;
             }
-            if((sensor_Distance - Distance_def) < -20){
+            if(sensor_Distance < -20){
                 status += 25;
-                Distance_def = sensor_Distance;
+                
             }
       
 
@@ -68,8 +68,6 @@ con.connect(function(err) {
             */
 
             console.log('\n\n');
-
-            status = 0;
         }
     });
 
