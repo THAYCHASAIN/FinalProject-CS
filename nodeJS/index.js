@@ -69,7 +69,7 @@ con.connect(function(err) {
 
             console.log('\n\n');
 
-
+            status = 0;
         }
     });
 
