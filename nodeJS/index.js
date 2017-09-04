@@ -45,7 +45,7 @@ con.connect(function(err) {
                 status += 25; 
                 
             }
-            if((sensor_Distance - Distance_def) = 20) {
+            if((sensor_Distance - Distance_def) == 20) {
                 status = 0;
             }
             if((sensor_Distance - Distance_def) < 20){
