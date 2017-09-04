@@ -2,7 +2,7 @@
 const app = require('express')();
 
 const mysql = require('mysql');
-
+var Weight_def = 0;
 var con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -77,7 +77,7 @@ con.connect(function(err) {
         if (err) {
             throw err;
         }
-        var Weight_def = 0;
+        
         console.log(`Server running at: ${server.info.uri}`);
     });
 });
