@@ -9,6 +9,8 @@ var con = mysql.createConnection({
     password: '',
     database: 'project_final'
 });
+var Distance_def = 1;
+
 
 con.connect(function(err) {
     if (err) throw err;
@@ -33,17 +35,47 @@ con.connect(function(err) {
         method: 'GET',
         path: '/formArduino/{sen1}/{sen2}/{time}',
         handler: function (request, reply) {
+            var status = 0;
+
             var  sensor_Weight = encodeURIComponent(request.params.sen1);
             var  sensor_Distance = encodeURIComponent(request.params.sen2);
             var time_stamp = encodeURIComponent(request.params.time);
+            /*
+            if(sensor_Weight < 140){
+                status += 25; 
+                
+            }
+            if(sensor_Distance > 20) {
+                status = 
+            }
+            if(sensor_Distance < -20){
+                status += 25;
+                //set Distance = 0;
+            }
+        
+*/
+
+
+
+
+
+
+
+
+            
+            console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ sensor_Weight );
+            console.log('time : ' + encodeURIComponent(request.params.time));
+            console.log('Distance def : '+Distance_def);
+            reply('OKAY');
+
+            Distance_def ++;
+            /*
             con.query('INSERT INTO tb_log (SEN_W,SEN_R,status,time) VALUES ("'+sensor_Weight+'","'+sensor_Distance+'","1","'+time_stamp+'")',function(err,result,field){
                 if(err) throw err;
-                console.log('OKAY');
+                console.log('isert success');
             })
-            console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+sensor_Weight );
-            console.log('time : ' + encodeURIComponent(request.params.time));
+            */
             console.log('\n\n');
-            reply('OKAY');
 
 
         }
@@ -51,7 +83,6 @@ con.connect(function(err) {
 
 
     server.start((err) => {
-
         if (err) {
             throw err;
         }
