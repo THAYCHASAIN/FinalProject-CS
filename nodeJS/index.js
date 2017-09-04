@@ -49,7 +49,7 @@ con.connect(function(err) {
        
             if((Weight_def - sensor_Weight)  >50){
                 status += 25;
-                Weight_def = 0; //set 
+                Weight_def = sensor_Weight; //set 
             }
             -100 - -100
          
