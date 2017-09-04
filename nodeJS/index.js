@@ -36,17 +36,18 @@ con.connect(function(err) {
         path: '/formArduino/{sen1}/{sen2}/{time}',
         handler: function (request, reply) {
             var status = 0;
+            var Weight_def = 0;
 
             var  sensor_Weight = encodeURIComponent(request.params.sen1);
             var  sensor_Distance = encodeURIComponent(request.params.sen2);
-            var time_stamp = encodeURIComponent(request.params.time);
+            var  time_stamp = encodeURIComponent(request.params.time);
+
             
             if(sensor_Distance < 140){
                 status += 25; 
-                
             }
          
-            if(sensor_Weight < -20){
+            if((Weight_def - sensor_Weight)  < -20){
                 status += 25;
             }
       
