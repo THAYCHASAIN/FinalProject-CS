@@ -43,13 +43,14 @@ con.connect(function(err) {
             var  time_stamp = encodeURIComponent(request.params.time);
 
             
-            if(sensor_Distance < 140){
+            if(sensor_Distance < 130){
                 status += 25; 
             }
          
-            if((Weight_def - sensor_Weight)  < -20){
+            if((Weight_def - sensor_Weight)  >50){
                 status += 25;
             }
+         
       
 
             console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ sensor_Weight );
