@@ -59,7 +59,7 @@ con.connect(function(err) {
 
             console.log('Sensor Distance : ' + sensor_Distance + '\nSensor Weight : '+ sensor_Weight );
             console.log('Weight def : '+Weight_def);
-            console.log('result : '+(Weight_def - sensor_Weight);
+            console.log('result : '+(Weight_def - sensor_Weight));
             console.log('Time : '+time_stamp);
             console.log('Status : '+ status);
             reply('OKAY');
