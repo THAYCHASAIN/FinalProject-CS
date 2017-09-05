@@ -1,0 +1,34 @@
+#include <Wire.h>
+#include <VL53L0X.h>
+#include <HX711.h>
+
+
+
+VL53L0X sensor;
+HX711 scale(A1, A0);
+
+
+void setup()
+{
+  Serial.begin(9600);
+  Wire.begin();
+  sensor.init();
+  sensor.setTimeout(500);
+  sensor.startContinuous();
+
+  scale.set_scale(2280.f);         
+  scale.tare();
+}
+void loop()
+{
+    
+  Serial.print(sensor.readRangeContinuousMillimeters());
+  if (sensor.timeoutOccurred()) { Serial.print(" TIMEOUT"); }
+  Serial.println();
+
+  Serial.println(scale.get_units(), 1);
+  scale.power_down();			       
+  delay(1000);
+  scale.power_up();
+
+}
