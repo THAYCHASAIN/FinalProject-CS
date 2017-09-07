@@ -66,67 +66,40 @@
                                                 <div class="box-header">
                                                     <h3 class="box-title">ใช้งานโปรโมชั่น</h3>
                                                 </div>
-                                                <div class="box-body chart-responsive">
-                                                <div class="box">
-                                                    <div class="box-header">
-                                                        <div class=" row">
-                                                            <div class="col-sm-3">
-                                                            <a href="m1-usepro1.php" type="button" class="btn-lg  btn-info"> <i class="fa fa-barcode"></i> ใช้งานโปรโมชั่น</a>
-                                                           
+
+
+                                                <div class="row">
+                                                    <div class="col-sm-2"></div>
+                                                    <div class="col-sm-8">
+
+                                                        <form class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-sm-3" for="email">รหัสโปรโมชั่น : </label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="text" class="form-control" id="text1" placeholder="" value = "001006A">
+                                                                </div>
                                                             </div>
-                                                        </div>                                                                
+                                                            <div class="form-group">
+                                                                <label class="control-label col-sm-3" for="email">ชื่อลูกค้า : </label>
+                                                                <div class="col-sm-8">
+                                                                    <input type="text" class="form-control" id="text2" placeholder="" value = "หมีตัวกลม">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-sm-3" for="email"></label>
+                                                                <div class="col-sm-8">
+                                                                    <p>*กรุณากรอกข้อมูลให้ครบถ้วน</p>
+                                                                    <a href="m1-usepro2.php" type="button" class="btn btn-success btn-md"> </i> บันทึกรายการ</a>
+                                                                </div>
+                                                            </div>
+
+                                                            
+                                                        </form>
                                                     </div>
-                                                    <div class="box-body">
-                                                    <table id="example1" class="table table-bordered table-striped">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>ลำดับ</th>
-                                                            <th>เลขที่คูปอง</th>
-                                                            <th>รหัสประจำคูปอง</th>
-                                                            <th>ชื่อคูปอง</th>
-                                                            <th>ชื่อลูกค้า</th>
-                                                            <th>วันที่</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>000078</td>
-                                                                <td>1364005486</td>
-                                                                <td>คูปองซื้อ kfc ชุดใหญ่ แถม ไก่ 1 ชิ้น</td>
-                                                                <td>mint</td>
-                                                                <td>9/07/2017</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>000001</td>
-                                                                <td>6980010356</td>
-                                                                <td>คูปองซื้อ 1 แถม 1 MC Jean</td>
-                                                                <td>thay</td>
-                                                                <td>6/05/2017</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>000056</td>
-                                                                <td>9468213365</td>
-                                                                <td>ส่วนลด kfc 100 บาท</td>
-                                                                <td>elf</td>
-                                                                <td>3/04/2017</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>000100</td>
-                                                                <td>1036648213</td>
-                                                                <td>ส่วนลด MC Jean 30 %</td>
-                                                                <td>tom</td>
-                                                                <td>30/01/2017</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    </div><!-- /.box-body -->
-                                                </div><!-- /.box -->
-                                                </div><!-- /.box-body -->
-                                            </div><!-- /.box -->
+                                                    <div class="col-sm-2"></div>
+                                                </div>
+                            
+                                           
                                         </div>
                                     </div><!-- /.box --> 
                                 </div>
@@ -236,30 +209,7 @@
                         <div class="col-sm-8">
                             
                             <h3></h3>
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label class="control-label col-sm-3" for="email">รหัสโปรโมชั่น : </label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="text1" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-sm-3" for="email">ชื่อลูกค้า : </label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="text2" placeholder="">
-                                    </div>
-                                </div>
-                        
-                            
-                                <div class="form-group">
-                                    <label class="control-label col-sm-3" for="email"></label>
-                                    <div class="col-sm-8">
-                                        <p>*กรุณากรอกข้อมูลให้ครบถ้วน</p>
-                                        <button type="button" class="btn btn-success btn-md">บันทึกรายการ</button>
-                                    </div>
-                                </div>
-                            </form>
-                            
+                          
                         </div>
                         <div class="col-sm-2"></div>
                     </div>

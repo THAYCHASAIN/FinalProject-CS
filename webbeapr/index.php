@@ -27,9 +27,7 @@
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#main-navbar">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
 		
 		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div id="menubar" class="main-menu">	
@@ -193,7 +191,7 @@
                     <div class="title text-center arrow-left">
                         <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
 
-                        <h4 class="">Our Packages</h4>
+                        <h4 class="">Packages</h4>
                     </div>
                 </div>
 
@@ -282,7 +280,7 @@
 
                     <tr>
                         <td></td>
-                        <td align="right"><button type="button" class="btn btn-success">  Buy now  </button></td>
+                        <td align="right"><button type="button" class="btn btn-success">  Try now  </button></td>
                         <td align="right"><button type="button" class="btn btn-success">  Buy now  </button></td>
                         <td align="right"><button type="button" class="btn btn-success">  Buy now  </button></td>
                         <td align="right"><button type="button" class="btn btn-success">  Buy now  </button></td>
@@ -300,7 +298,7 @@
                 <div class="heading">
                     <div class="title text-center arrow-left">
                         <img class="hidden-xs" src="assets/images/left-arrow.png" alt="" />
-                        <h4 class="">แพ็คเกจของเรา </h4>
+                        <h4 class="">Partner</h4>
                     </div>
                 </div>	
                 <div class="row">

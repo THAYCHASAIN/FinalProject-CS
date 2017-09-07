@@ -27,6 +27,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-9 col-xs-6" class="img-responsive">
+                            <div class="panel panel-default">
+                                    <div class="panel-body"><font size="14" face="verdana" color="green">MK restaurant โลตัสสาขาพะเยา Standard Class</font></div>
+                                </div>
+                                <br>
                                 <div class="panel panel-default">
                                     <div class="panel-body">          
                                         <div class = "row" >  

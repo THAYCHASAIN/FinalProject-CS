@@ -13,10 +13,7 @@
                     <a href="m1-usepro.php" type="button" class="btn  btn btn-success btn-lg"> <i class="fa fa-barcode"></i> ใช้งานโปรโมชั่น</a>
                         
                     </section>
-                    <!-- Main content -->
                     <section class="content">
-                            
-                        <!-- Small boxes (Stat box) -->
                             <div class="col-lg-2 col-xs-6">
                                 <div class="panel panel-default">
                                     <ul class="nav nav-pills nav-stacked">
@@ -29,6 +26,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-9 col-xs-6" class="img-responsive">
+                            <div class="panel panel-default">
+                                    <div class="panel-body"><font size="14" face="verdana" color="green">MK restaurant โลตัสสาขาพะเยา Standard Class</font></div>
+                                </div>
+                            <br>
                                 <div class="panel panel-default">
                                     <div class="panel-body">          
                                         <div class = "row" >  
@@ -36,14 +37,10 @@
                                                 <div class="box-header">
                                                     <h3 class="box-title">จัดการสิทธิผู้ดูแล</h3>
                                                 </div>
-                                                
                                             </div><!-- /.box -->
-
                                         </div>
                                     </div><!-- /.box --> 
-                                </div>
-                                    
-                        
+                                </div>       
                             </div>
                             </div>
                         </div>
@@ -128,3 +125,25 @@
                 </div>
             </div>
         </div>
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
