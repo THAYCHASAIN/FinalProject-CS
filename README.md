@@ -1,8 +1,8 @@
 # FinalProject-CS
-==================
+
 ALL FILE PROJRCT
 
-==================
+
 ##ขั้นตอนการติดตั้ง ionic famework 
 1. ติดตั้งโปรแกรม gitbash 
 2. ติดตั้ง JDK ของ java \n
