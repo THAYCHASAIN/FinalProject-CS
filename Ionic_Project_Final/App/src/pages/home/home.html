@@ -7,8 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  Time : {{count}} <br>
+  {{count1}} : {{Distance1}} <br>
+  {{count2}} : {{Distance2}} <br>
+  <ion-list inset>
+    <button ion-item *ngFor="let item of Device" (click)="itemSelected(item)">
+        {{item.id}}
+    </button> 
+  </ion-list>
 </ion-content>

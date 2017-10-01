@@ -3,12 +3,14 @@
 ALL FILE PROJRCT
 
 
-##ขั้นตอนการติดตั้ง ionic famework 
+##ขั้นตอนการติดตั้ง ionic famework  https://ionicframework.com/
 1. ติดตั้งโปรแกรม gitbash 
-2. ติดตั้ง JDK ของ java \n
+2. ติดตั้ง JDK ของ java 
 3. ติดตั้งโปรแกรม Android studio
 4. ติดตั้ง nodeJS
-5. ตั้งค่า path สองอันคือ ANDROID_HOME ให้ชี้ไปที่ Dir ของ JSK (อยู่ใน %appdata% ) และ JAVA_HOME ให้ชี้ไป Dir ของ JDK
+5. ตั้งค่า path สองอันคือ  
+    * ANDROID_HOME ให้ชี้ไปที่  C:\Users\RaonbowMAN\AppData\Local\Android\sdk\platform-tools;C:\Users\RaonbowMAN\AppData\Local\Android\sdk\tools;
+    * JAVA_HOME ให้ชี้ไป C:\Program Files\Java\jdk1.8.0_144 
 6. เปิดใช้งาน gitbash และใช้คำสั่ง npm install -g cordova ionic เพื่อทำการตั้งติด ionic 
 7. ทำการสร้าง Folder และทำการเปิด gitbash ที่ Dir นั้น
 8. ใช้คำสั่ง  ionic start {{ชื่อapp}} {{ประเภทการตั้งค่าเดิม}}  เพื่อสร้างโปรเจ็คขึ้นมา
