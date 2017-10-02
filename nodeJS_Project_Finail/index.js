@@ -1,8 +1,9 @@
 'use strict';
 const app = require('express')();
-console.log('testtttt');
+console.log('Welcome ');
 const mysql = require('mysql');
 var Weight_def = 0;
+
 var con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -12,13 +13,34 @@ var con = mysql.createConnection({
 var Distance_def = 1;
 
 
+const Hapi = require('hapi');
+
+const server = new Hapi.Server();
+server.connection({ port: 4000, host: '192.168.1.17' });
+server.route({
+    method: 'GET',
+    path: '/test',
+    handler: function (request, reply) {
+        reply('Wellcome');
+        console.log('Hello, world!');
+    }
+});
+
+    server.start((err) => {
+        if (err) {
+            throw err;
+        }
+        
+        console.log(`Server running at: ${server.info.uri}`);
+    });
+/*
 con.connect(function(err) {
     if (err) throw err;
     
     const Hapi = require('hapi');
 
     const server = new Hapi.Server();
-    server.connection({ port: 4000, host: '192.168.137.1' });
+    server.connection({ port: 4000, host: '127.0.0.1' });
 
 
 
@@ -69,8 +91,9 @@ con.connect(function(err) {
                 if(err) throw err;
                 console.log('isert success');
             })
-            */
-
+            
+*/
+/*
             console.log('\n\n');
         }
     });
@@ -84,3 +107,4 @@ con.connect(function(err) {
         console.log(`Server running at: ${server.info.uri}`);
     });
 });
+*/
