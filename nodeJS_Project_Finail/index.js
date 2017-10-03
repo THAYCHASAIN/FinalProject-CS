@@ -16,7 +16,7 @@ var Distance_def = 1;
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
-server.connection({ port: 4000, host: '192.168.1.17' });
+server.connection({ port: 4000, host: '127.0.0.1' });
 server.route({
     method: 'GET',
     path: '/test',
